@@ -1,0 +1,10 @@
+
+
+all: $(TGT)
+
+$(BINDIR)/$(TGT): 
+	$(CC) $(FLAGS) $(TGTSRCS) -o $(BINDIR)/$(TGT).out $(INCDIRS) $(LIBS) $(OPTS)
+
+prep: 
+	mkdir -p $(BINDIR)
+
